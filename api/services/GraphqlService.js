@@ -1,6 +1,6 @@
 'use strict'
 
-const Service = require('trails-service')
+const Service = require('trails/service')
 const { graphql, formatError } = require('graphql')
 
 /**
@@ -28,4 +28,3 @@ module.exports = class GraphqlService extends Service {
   }
 
 }
-

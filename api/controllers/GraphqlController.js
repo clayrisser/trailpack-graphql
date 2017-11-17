@@ -1,6 +1,6 @@
 'use strict'
 
-const Controller = require('trails-controller')
+const Controller = require('trails/controller')
 
 /**
  * @module GraphqlController
@@ -17,4 +17,3 @@ module.exports = class GraphqlController extends Controller {
     reply(this.app.services.GraphqlService.query(gql))
   }
 }
-
