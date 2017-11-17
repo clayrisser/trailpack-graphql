@@ -37,7 +37,7 @@ module.exports = class GraphqlTrailpack extends Trailpack {
       })
 
     const schemaString = gqlModels
-      .map(([ model, modelName ]) => model.constructor.schema(graphqlTag) || '')
+      .map(([ model, modelName ]) => model.constructor.graphqlSchema(graphqlTag) || '')
       .join('\n')
 
     const rootQueryBody = gqlModels
